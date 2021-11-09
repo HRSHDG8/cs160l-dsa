@@ -42,7 +42,7 @@ public class Course {
   private boolean studentAlreadyPresent(Student s) {
     return studentsEnrolled
        .stream()
-       .anyMatch(student -> student.getRedId().equals(s.getRedId()));
+       .anyMatch(student -> student.getRedId().equals(s.getRedId())); // if any student already exist
   }
 
   private boolean isClassFull() {
