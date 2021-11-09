@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Course {
-  private static final int MAX_COURSE_SIZE = 2;
+  private static final int MAX_COURSE_SIZE = 30;
   private final String courseName;
   private final int courseUnits;
   private final List<Student> studentsEnrolled;
@@ -24,7 +24,7 @@ public class Course {
       throw new NullPointerException("Cannot add a non existing null student to a course.");
     }
     if (studentAlreadyPresent(studentToBeEnrolled)) {
-      throw new StudentAlreadyEnrolledException(studentToBeEnrolled + " is already enrolled to the course");
+      throw new StudentAlreadyEnrolledException(studentToBeEnrolled + " is already enrolled to the course "+courseName);
     }
     if (isClassFull()) {
       throw new ClassFullException("All the seats for " + courseName + " have been occupied.");

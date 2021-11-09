@@ -15,7 +15,7 @@ import edu.sdsu.cs160l.lab10.assignment.institute.student.Student;
  * 3) what is try with resources
  * 4) the flow of try catch finally
  */
-public class Lab8 {
+public class Lab10 {
 
   private static final Registrar registrar = new Registrar();
 

@@ -4,5 +4,6 @@ public enum StudentMajor {
   COMPUTER_SCIENCE,
   COMPUTER_ENGINEERING,
   BIOLOGY,
-  MATH
+  MATH,
+  PHYSICS
 }

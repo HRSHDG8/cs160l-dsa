@@ -52,6 +52,7 @@ public class Student {
        ", gpa=" + gpa +
        ", level=" + level +
        ", major=" + major +
+       ", unitsEnrolled=" + unitsEnrolled +
        '}';
   }
 }
