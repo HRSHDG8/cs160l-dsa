@@ -2,6 +2,7 @@ package edu.sdsu.cs160l.lab10.advancedhandling;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -94,6 +95,17 @@ public class StreamOperation {
           .filter(e -> e < 10)
           .findFirst()
           .orElse(0))
+       .collect(Collectors.toList());
+  }
+
+  public List<List<Integer>> max2ElementsInEachRow(){
+    return numbers
+       .stream()
+       .map(list-> list
+          .stream()
+          .sorted(Comparator.reverseOrder())
+          .limit(2)
+          .collect(Collectors.toList()))
        .collect(Collectors.toList());
   }
 

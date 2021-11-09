@@ -27,7 +27,7 @@ public class Registrar {
     validCourseList = Collections.unmodifiableList(new ArrayList<>(courseList.keySet()));
   }
 
-  public List<String> availableCourseNames(){
+  public List<String> availableCourseNames() {
     return validCourseList;
   }
 
@@ -53,14 +53,12 @@ public class Registrar {
        .collect(Collectors.toList()); // List<Student>
   }
 
-  public List<Student> getStudentsEnrolled(){
+  public List<Student> getStudentsEnrolled() {
     return courseList
        .entrySet() // Map.Entry<String, Course>
        .stream() // Stream<Map.Entry<String, Course>>
-//       .filter(entrySet -> entrySet.getKey().startsWith(courseNameStartWith)) // Stream<Map.Entry<String, Course>>
        .map(entrySet -> entrySet.getValue().getStudentsEnrolled())// Stream<List<Student>>
        .flatMap(students -> students.stream()) // Stream<Student> Flattens List<Student> to Student so [[1,2],[3,4]] -> [1,2,3,4]
-//       .filter(student -> student.getMajor() == major) // Stream<Student>
        .distinct() //  Stream<Student> returns unique stream of students
        .collect(Collectors.toList()); // List<Student>
   }
@@ -96,11 +94,14 @@ public class Registrar {
     return null;
   }
 
-  public Double averageCourseUnitsByAllStudentsAcrossAllCourse(){
+  /**
+   * TODO implement the function below such that it returns an average of gpa for all student in all courses.
+   */
+  public Double averageCourseUnitsByAllStudentsAcrossAllCourse() {
     return null;
   }
 
-  public Double averageCourseUnitsByAllStudentsAcrossAllNonComputerCourse(){
+  public Double averageCourseUnitsByAllStudentsAcrossAllNonComputerCourse() {
     return null;
   }
 

@@ -24,5 +24,13 @@ public class Main {
     streamOperations
        .firstSingleDigitInRow()
        .forEach(e -> System.out.println("First single digit in each row :: " + e));
+
+    System.out.println("Max 2 elements in reach row.");
+    streamOperations
+       .max2ElementsInEachRow()
+       .forEach(list -> {
+         list.forEach(e -> System.out.print("\t" + e));
+         System.out.println();
+       });
   }
 }

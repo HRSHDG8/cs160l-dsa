@@ -65,9 +65,31 @@ public class Lab10Test {
        .forEach(System.out::println);
   }
 
-  //TODO write test cases below
+  //TODO write test cases below for each of the following method that just prints the final output of stream operation
   @Test
   public void printEnrolledStudentsByMajorAndCourseName(){
 
   }
+
+  @Test
+  public void printGetStudentsGpa(){
+
+  }
+
+  @Test
+  public void printTopNStudentRedIdsWithHighestScoreInEachCourse(){
+
+  }
+
+  @Test
+  public void printAverageCourseUnitsByAllStudentsAcrossAllCourse(){
+
+  }
+
+  @Test
+  public void printAverageCourseUnitsByAllStudentsAcrossAllNonComputerCourse(){
+
+  }
+
+
 }
