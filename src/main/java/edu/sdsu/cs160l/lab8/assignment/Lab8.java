@@ -1,10 +1,12 @@
 package edu.sdsu.cs160l.lab8.assignment;
 
+import edu.sdsu.cs160l.lab8.assignment.institute.student.StudentLevel;
+import edu.sdsu.cs160l.lab8.assignment.institute.student.StudentMajor;
 import edu.sdsu.cs160l.lab8.exceptions.ClassFullException;
 import edu.sdsu.cs160l.lab8.exceptions.NoSuchCourseException;
 import edu.sdsu.cs160l.lab8.exceptions.StudentAlreadyEnrolledException;
 import edu.sdsu.cs160l.lab8.assignment.institute.Registrar;
-import edu.sdsu.cs160l.lab8.assignment.institute.Student;
+import edu.sdsu.cs160l.lab8.assignment.institute.student.Student;
 
 /**
  * Create a report explaining in one or more lines (carries 2 points)
@@ -18,9 +20,9 @@ public class Lab8 {
   private static final Registrar registrar = new Registrar();
 
   public static void main(String[] args) {
-    Student hmac = new Student(825000001L, "hmac");
-    Student john = new Student(825000002L, "john");
-    Student jane = new Student(825000003L, "jane");
+    Student hmac = new Student(825000001L, "hmac", 3.8, StudentLevel.SENIOR, StudentMajor.COMPUTER_SCIENCE);
+    Student john = new Student(825000002L, "john", 3.7, StudentLevel.FRESHMAN, StudentMajor.BIOLOGY);
+    Student jane = new Student(825000003L, "jane", 3.6, StudentLevel.SOPHOMORE, StudentMajor.COMPUTER_ENGINEERING);
     Student nullStudent = null;
     executeTryCatch("CS210", hmac);
     // adding hmac again should give StudentAlreadyEnrolledException

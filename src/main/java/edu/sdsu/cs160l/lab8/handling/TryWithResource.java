@@ -1,6 +1,8 @@
 package edu.sdsu.cs160l.lab8.handling;
 
-import edu.sdsu.cs160l.lab8.assignment.institute.Student;
+import edu.sdsu.cs160l.lab8.assignment.institute.student.Student;
+import edu.sdsu.cs160l.lab8.assignment.institute.student.StudentLevel;
+import edu.sdsu.cs160l.lab8.assignment.institute.student.StudentMajor;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -12,7 +14,7 @@ public class TryWithResource {
 
   public static void main(String[] args) {
     try {
-      writeToFile("CS310", new Student(825000001L, "sheldon"));
+      writeToFile("CS310", new Student(825000001L, "sheldon", 4.0, StudentLevel.JUNIOR, StudentMajor.MATH));
     } catch (IOException e) {
       e.printStackTrace();
     }

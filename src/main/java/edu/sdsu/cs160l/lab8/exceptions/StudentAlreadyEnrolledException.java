@@ -1,5 +1,7 @@
 package edu.sdsu.cs160l.lab8.exceptions;
 
-//TODO implement this exception 1point as per the bluePrint in ClassFullException
-public class StudentAlreadyEnrolledException extends Exception{
+public class StudentAlreadyEnrolledException extends Exception {
+  public StudentAlreadyEnrolledException(String message) {
+    super(message);
+  }
 }
