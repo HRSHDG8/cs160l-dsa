@@ -1,4 +1,4 @@
-package edu.sdsu.cs160l.lab8.exceptions;
+package edu.sdsu.cs160l.lab10.exceptions;
 
 import java.util.NoSuchElementException;
 

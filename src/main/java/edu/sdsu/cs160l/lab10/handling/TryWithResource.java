@@ -1,8 +1,8 @@
-package edu.sdsu.cs160l.lab8.handling;
+package edu.sdsu.cs160l.lab10.handling;
 
-import edu.sdsu.cs160l.lab8.assignment.institute.student.Student;
-import edu.sdsu.cs160l.lab8.assignment.institute.student.StudentLevel;
-import edu.sdsu.cs160l.lab8.assignment.institute.student.StudentMajor;
+import edu.sdsu.cs160l.lab10.assignment.institute.student.Student;
+import edu.sdsu.cs160l.lab10.assignment.institute.student.StudentLevel;
+import edu.sdsu.cs160l.lab10.assignment.institute.student.StudentMajor;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

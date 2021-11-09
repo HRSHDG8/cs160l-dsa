@@ -1,8 +1,8 @@
-package edu.sdsu.cs160l.lab8.assignment.institute;
+package edu.sdsu.cs160l.lab10.assignment.institute;
 
-import edu.sdsu.cs160l.lab8.assignment.institute.student.Student;
-import edu.sdsu.cs160l.lab8.exceptions.ClassFullException;
-import edu.sdsu.cs160l.lab8.exceptions.StudentAlreadyEnrolledException;
+import edu.sdsu.cs160l.lab10.assignment.institute.student.Student;
+import edu.sdsu.cs160l.lab10.exceptions.ClassFullException;
+import edu.sdsu.cs160l.lab10.exceptions.StudentAlreadyEnrolledException;
 
 import java.util.ArrayList;
 import java.util.List;

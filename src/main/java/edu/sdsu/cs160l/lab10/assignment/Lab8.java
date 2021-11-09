@@ -1,12 +1,12 @@
-package edu.sdsu.cs160l.lab8.assignment;
+package edu.sdsu.cs160l.lab10.assignment;
 
-import edu.sdsu.cs160l.lab8.assignment.institute.student.StudentLevel;
-import edu.sdsu.cs160l.lab8.assignment.institute.student.StudentMajor;
-import edu.sdsu.cs160l.lab8.exceptions.ClassFullException;
-import edu.sdsu.cs160l.lab8.exceptions.NoSuchCourseException;
-import edu.sdsu.cs160l.lab8.exceptions.StudentAlreadyEnrolledException;
-import edu.sdsu.cs160l.lab8.assignment.institute.Registrar;
-import edu.sdsu.cs160l.lab8.assignment.institute.student.Student;
+import edu.sdsu.cs160l.lab10.assignment.institute.student.StudentLevel;
+import edu.sdsu.cs160l.lab10.assignment.institute.student.StudentMajor;
+import edu.sdsu.cs160l.lab10.exceptions.ClassFullException;
+import edu.sdsu.cs160l.lab10.exceptions.NoSuchCourseException;
+import edu.sdsu.cs160l.lab10.exceptions.StudentAlreadyEnrolledException;
+import edu.sdsu.cs160l.lab10.assignment.institute.Registrar;
+import edu.sdsu.cs160l.lab10.assignment.institute.student.Student;
 
 /**
  * Create a report explaining in one or more lines (carries 2 points)

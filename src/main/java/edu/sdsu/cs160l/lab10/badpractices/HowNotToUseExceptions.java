@@ -1,4 +1,4 @@
-package edu.sdsu.cs160l.lab8.badpractices;
+package edu.sdsu.cs160l.lab10.badpractices;
 
 import java.util.ArrayList;
 import java.util.Arrays;

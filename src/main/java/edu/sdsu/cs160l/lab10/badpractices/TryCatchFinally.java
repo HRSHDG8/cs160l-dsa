@@ -1,4 +1,4 @@
-package edu.sdsu.cs160l.lab8.badpractices;
+package edu.sdsu.cs160l.lab10.badpractices;
 
 public class TryCatchFinally {
   private static final int[] DATA = new int[]{1,2,3};
