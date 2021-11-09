@@ -23,5 +23,5 @@ import edu.sdsu.cs160l.lab10.assignment.institute.student.Student;
  *  e) max
  */
 public class Lab10 {
-  //Nothing much to look here, look for TODOs in the code
+  //Nothing much to look here, find TODOs in the code
 }

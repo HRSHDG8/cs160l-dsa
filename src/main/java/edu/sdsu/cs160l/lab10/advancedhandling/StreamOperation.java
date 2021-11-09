@@ -5,10 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class UsingStreamOn2DimensionalArray {
-  private List<List<Integer>> numbers;
+public class StreamOperation {
+  private final List<List<Integer>> numbers;
 
-  public UsingStreamOn2DimensionalArray() {
+  public StreamOperation() {
     this.numbers = new ArrayList<>();
     List<Integer> row1 = new ArrayList<>(Arrays.asList(1, 6, 8, 5));
     List<Integer> row2 = new ArrayList<>(Arrays.asList(10, 2, 7, 11));
@@ -25,6 +25,32 @@ public class UsingStreamOn2DimensionalArray {
        .stream()
        .flatMap(list -> list.stream())
        .collect(Collectors.toList());
+  }
+
+  public Integer sumOfAllElements() {
+    return numbers
+       .stream()
+       .flatMap(list -> list.stream())
+       .mapToInt(integer -> integer.intValue())
+       .sum();
+  }
+
+  public Double averageOfAllElements() {
+    return numbers
+       .stream()
+       .flatMap(list -> list.stream())
+       .mapToInt(integer -> integer.intValue())
+       .average()
+       .orElse(0);
+  }
+
+  public Integer maxOfAllElements() {
+    return numbers
+       .stream()
+       .flatMap(list -> list.stream())
+       .mapToInt(integer -> integer.intValue())
+       .max()
+       .orElse(0);
   }
 
 
