@@ -12,9 +12,9 @@ public class StreamOperation {
   public StreamOperation() {
     this.numbers = new ArrayList<>();
     List<Integer> row1 = new ArrayList<>(Arrays.asList(1, 6, 8, 5));
-    List<Integer> row2 = new ArrayList<>(Arrays.asList(10, 2, 7, 11));
-    List<Integer> row3 = new ArrayList<>(Arrays.asList(15, 4, 3, 14));
-    List<Integer> row4 = new ArrayList<>(Arrays.asList(13, 12, 9, 16));
+    List<Integer> row2 = new ArrayList<>(Arrays.asList(19, 2, 7, 11));
+    List<Integer> row3 = new ArrayList<>(Arrays.asList(15, 4, 3, 13));
+    List<Integer> row4 = new ArrayList<>(Arrays.asList(14, 12, 9, 16));
     numbers.add(row1);
     numbers.add(row2);
     numbers.add(row3);
@@ -103,8 +103,8 @@ public class StreamOperation {
        .stream()
        .map(list-> list
           .stream()
-          .sorted(Comparator.reverseOrder())
-          .limit(2)
+          .sorted(Comparator.reverseOrder()) //sort in reverse order to support
+          .limit(2) //limits the stream to first 2 elements
           .collect(Collectors.toList()))
        .collect(Collectors.toList());
   }
