@@ -10,7 +10,7 @@ public class Main {
     System.out.println("Sum of all elements is :: " + streamOperations.sumOfAllElements());
     System.out.println("Average of all elements is :: " + streamOperations.averageOfAllElements());
     System.out.println("Max of all elements is :: " + streamOperations.maxOfAllElements());
-    System.out.println("Any row having mulitple of 5 :: " + streamOperations.rowWithMultipleOf5());
+    System.out.println("Does any row have a number that is multiple of 5 :: " + streamOperations.rowWithMultipleOf5());
     // nested operations
     streamOperations
        .sumOfEachRow()
