@@ -9,7 +9,7 @@ import edu.sdsu.cs160l.lab10.assignment.institute.Registrar;
 import edu.sdsu.cs160l.lab10.assignment.institute.student.Student;
 
 /**
- * TODO
+ * TODO (4 points)
  * Lab Report is mandatory for this lab (3 points)
  * 1) What did you learn in both the function programming labs (lab9 and lab10),
  * 2) Explain map, reduce, filter and how they behave wrt to

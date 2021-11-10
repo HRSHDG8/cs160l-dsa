@@ -9,6 +9,9 @@ import edu.sdsu.cs160l.lab10.exceptions.StudentAlreadyEnrolledException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+/**
+ * TODO write all test cases below (2 points)
+ */
 public class Lab10Test {
   private Registrar registrar;
 

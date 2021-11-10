@@ -93,8 +93,8 @@ public class StreamOperation {
        .map(list -> list // since each row is a list or a collection you can invoke stream api on each row
           .stream()
           .filter(e -> e < 10)
-          .findFirst()
-          .orElse(0))
+          .findFirst() // return the first element that stream encounters
+          .orElse(0)) // if no element is found return 0
        .collect(Collectors.toList());
   }
 

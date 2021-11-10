@@ -9,6 +9,9 @@ import edu.sdsu.cs160l.lab10.exceptions.StudentAlreadyEnrolledException;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * TODO implement 4 todos below (4 points)
+ */
 public class Registrar {
   private final Map<String, Course> courseList;
   private final List<String> validCourseList;
@@ -87,8 +90,6 @@ public class Registrar {
 
   /**
    * TODO implement the function below such that it returns a list of redId for N students that have highest score in that course.
-   *
-   * @return List<Long> of redIds for the highest student in that grade.
    */
   public List<Long> topNStudentRedIdsWithHighestScoreInEachCourse(int n) {
     return null;
@@ -101,6 +102,9 @@ public class Registrar {
     return null;
   }
 
+  /**
+   * TODO implement the function below such that it returns an average of gpa for all student in all courses that are not COMP SCI or COMP Eng.
+   */
   public Double averageCourseUnitsByAllStudentsAcrossAllNonComputerCourse() {
     return null;
   }
