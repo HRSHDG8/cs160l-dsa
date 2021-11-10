@@ -1,13 +1,5 @@
 package edu.sdsu.cs160l.lab10.assignment;
 
-import edu.sdsu.cs160l.lab10.assignment.institute.student.StudentLevel;
-import edu.sdsu.cs160l.lab10.assignment.institute.student.StudentMajor;
-import edu.sdsu.cs160l.lab10.exceptions.ClassFullException;
-import edu.sdsu.cs160l.lab10.exceptions.NoSuchCourseException;
-import edu.sdsu.cs160l.lab10.exceptions.StudentAlreadyEnrolledException;
-import edu.sdsu.cs160l.lab10.assignment.institute.Registrar;
-import edu.sdsu.cs160l.lab10.assignment.institute.student.Student;
-
 /**
  * TODO (4 points)
  * Lab Report is mandatory for this lab (3 points)
