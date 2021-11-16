@@ -1,11 +1,11 @@
-package edu.sdsu.cs160l.lab10.assignment;
+package edu.sdsu.cs160l.lab11.assignment;
 
-import edu.sdsu.cs160l.lab10.institute.Registrar;
-import edu.sdsu.cs160l.lab10.institute.student.Student;
-import edu.sdsu.cs160l.lab10.institute.student.StudentLevel;
-import edu.sdsu.cs160l.lab10.institute.student.StudentMajor;
-import edu.sdsu.cs160l.lab10.exceptions.ClassFullException;
-import edu.sdsu.cs160l.lab10.exceptions.StudentAlreadyEnrolledException;
+import edu.sdsu.cs160l.lab11.institute.Registrar;
+import edu.sdsu.cs160l.lab11.institute.student.Student;
+import edu.sdsu.cs160l.lab11.institute.student.StudentLevel;
+import edu.sdsu.cs160l.lab11.institute.student.StudentMajor;
+import edu.sdsu.cs160l.lab11.exceptions.ClassFullException;
+import edu.sdsu.cs160l.lab11.exceptions.StudentAlreadyEnrolledException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

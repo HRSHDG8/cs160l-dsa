@@ -1,6 +1,6 @@
-package edu.sdsu.cs160l.lab10.methodrefrence;
+package edu.sdsu.cs160l.lab11.methodrefrence;
 
-import edu.sdsu.cs160l.lab10.institute.student.Student;
+import edu.sdsu.cs160l.lab11.institute.student.Student;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

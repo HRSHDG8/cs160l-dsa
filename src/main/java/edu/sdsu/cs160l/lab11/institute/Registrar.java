@@ -1,10 +1,10 @@
-package edu.sdsu.cs160l.lab10.institute;
+package edu.sdsu.cs160l.lab11.institute;
 
-import edu.sdsu.cs160l.lab10.institute.student.Student;
-import edu.sdsu.cs160l.lab10.institute.student.StudentMajor;
-import edu.sdsu.cs160l.lab10.exceptions.ClassFullException;
-import edu.sdsu.cs160l.lab10.exceptions.NoSuchCourseException;
-import edu.sdsu.cs160l.lab10.exceptions.StudentAlreadyEnrolledException;
+import edu.sdsu.cs160l.lab11.institute.student.Student;
+import edu.sdsu.cs160l.lab11.institute.student.StudentMajor;
+import edu.sdsu.cs160l.lab11.exceptions.ClassFullException;
+import edu.sdsu.cs160l.lab11.exceptions.NoSuchCourseException;
+import edu.sdsu.cs160l.lab11.exceptions.StudentAlreadyEnrolledException;
 
 import java.util.*;
 import java.util.stream.Collectors;

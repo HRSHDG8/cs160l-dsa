@@ -1,8 +1,8 @@
-package edu.sdsu.cs160l.lab10.methodrefrence;
+package edu.sdsu.cs160l.lab11.methodrefrence;
 
-import edu.sdsu.cs160l.lab10.institute.student.Student;
-import edu.sdsu.cs160l.lab10.institute.student.StudentLevel;
-import edu.sdsu.cs160l.lab10.institute.student.StudentMajor;
+import edu.sdsu.cs160l.lab11.institute.student.Student;
+import edu.sdsu.cs160l.lab11.institute.student.StudentLevel;
+import edu.sdsu.cs160l.lab11.institute.student.StudentMajor;
 
 import java.util.Arrays;
 import java.util.Comparator;
