@@ -1,11 +1,11 @@
 package edu.sdsu.cs160l.lab11.methodrefrence;
 
+import edu.sdsu.cs160l.lab11.exceptions.ClassFullException;
+import edu.sdsu.cs160l.lab11.exceptions.StudentAlreadyEnrolledException;
 import edu.sdsu.cs160l.lab11.institute.Registrar;
 import edu.sdsu.cs160l.lab11.institute.student.Student;
 import edu.sdsu.cs160l.lab11.institute.student.StudentLevel;
 import edu.sdsu.cs160l.lab11.institute.student.StudentMajor;
-import edu.sdsu.cs160l.lab11.exceptions.ClassFullException;
-import edu.sdsu.cs160l.lab11.exceptions.StudentAlreadyEnrolledException;
 
 import java.util.function.Function;
 
@@ -48,12 +48,11 @@ public class LambdaToMethodReference {
        .forEach(student -> System.out.println(student.getName()));
   }
 
-  /**
-   * Think over this, and write your understanding in your reports
-   */
   public void dynamicPrinter(Function<Student, ?> valueExtractor) {
     registrar
        .getStudentsEnrolled()
+       .stream()
+       .limit(1)
        .forEach(student -> System.out.println(valueExtractor.apply(student)));
   }
 
