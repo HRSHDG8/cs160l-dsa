@@ -1,7 +1,7 @@
-package edu.sdsu.cs160l.lab10.assignment.institute;
+package edu.sdsu.cs160l.lab10.institute;
 
-import edu.sdsu.cs160l.lab10.assignment.institute.student.Student;
-import edu.sdsu.cs160l.lab10.assignment.institute.student.StudentMajor;
+import edu.sdsu.cs160l.lab10.institute.student.Student;
+import edu.sdsu.cs160l.lab10.institute.student.StudentMajor;
 import edu.sdsu.cs160l.lab10.exceptions.ClassFullException;
 import edu.sdsu.cs160l.lab10.exceptions.NoSuchCourseException;
 import edu.sdsu.cs160l.lab10.exceptions.StudentAlreadyEnrolledException;
