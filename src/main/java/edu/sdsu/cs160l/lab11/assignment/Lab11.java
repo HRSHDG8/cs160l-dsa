@@ -6,6 +6,12 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * TODO Write report including the following points
+ * 1) Method Reference
+ * 2) Class vs Lambda vs Method-Reference
+ * 3) Collections.sort() vs Stream.sorted()
+ */
 public class Lab11 {
   private static class MultiLevelSorter implements Comparator<Student> {
 
