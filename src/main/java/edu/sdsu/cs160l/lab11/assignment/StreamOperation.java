@@ -1,4 +1,4 @@
-package edu.sdsu.cs160l.lab11.advancedhandling;
+package edu.sdsu.cs160l.lab11.assignment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,6 +6,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * TODO Convert all possible lambdas to method reference
+ */
 public class StreamOperation {
   private final List<List<Integer>> numbers;
 
@@ -116,5 +119,6 @@ public class StreamOperation {
           .stream()
           .anyMatch(integer -> integer % 5 == 0));
   }
+
 
 }

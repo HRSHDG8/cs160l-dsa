@@ -1,23 +1,25 @@
 package edu.sdsu.cs160l.lab11.assignment;
 
+import edu.sdsu.cs160l.lab11.exceptions.ClassFullException;
+import edu.sdsu.cs160l.lab11.exceptions.StudentAlreadyEnrolledException;
 import edu.sdsu.cs160l.lab11.institute.Registrar;
 import edu.sdsu.cs160l.lab11.institute.student.Student;
 import edu.sdsu.cs160l.lab11.institute.student.StudentLevel;
 import edu.sdsu.cs160l.lab11.institute.student.StudentMajor;
-import edu.sdsu.cs160l.lab11.exceptions.ClassFullException;
-import edu.sdsu.cs160l.lab11.exceptions.StudentAlreadyEnrolledException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-/**
- * TODO write all test cases below (2 points)
- */
-public class Lab10Test {
-  private Registrar registrar;
+import java.util.Arrays;
+import java.util.List;
+
+
+public class MethodReferenceTest {
+  private List<Student> students;
+  private MethodReference methodReference;
 
   @BeforeEach
   public void init() {
-    registrar = new Registrar();
+    Registrar registrar = new Registrar();
     Student hmac = new Student(825000001L, "hmac", 3.8, StudentLevel.SENIOR, StudentMajor.COMPUTER_SCIENCE);
     Student john = new Student(825000002L, "john", 3.7, StudentLevel.FRESHMAN, StudentMajor.BIOLOGY);
     Student jane = new Student(825000003L, "jane", 3.6, StudentLevel.SOPHOMORE, StudentMajor.COMPUTER_ENGINEERING);
@@ -27,7 +29,11 @@ public class Lab10Test {
         Student student = new Student(825000003L + i, "Name" + i, (3.0 + ((i % 10) / 10.0)), level, major);
         i++;
         for (String courseName : registrar.availableCourseNames()) {
-          enrollStudentToACourse(student, courseName);
+          try {
+            registrar.enrollStudent(courseName, student);
+          } catch (ClassFullException | StudentAlreadyEnrolledException e) {
+            e.printStackTrace();
+          }
         }
       }
     }
@@ -43,55 +49,39 @@ public class Lab10Test {
     } catch (ClassFullException | StudentAlreadyEnrolledException e) {
       e.printStackTrace();
     }
-    System.out.println(registrar);
+    students = registrar.getStudentsEnrolled();
+    methodReference = new MethodReference();
   }
 
-  private void enrollStudentToACourse(Student student, String courseName) {
-    try {
-      if (student.getMajor() == StudentMajor.COMPUTER_ENGINEERING || student.getMajor() == StudentMajor.COMPUTER_SCIENCE) {
-        if (courseName.startsWith("C")) {
-          registrar.enrollStudent(courseName, student);
-        }
-      } else {
-        if (!courseName.startsWith("C")) {
-          registrar.enrollStudent(courseName, student);
-        }
-      }
-    } catch (ClassFullException | StudentAlreadyEnrolledException e) {
-      e.printStackTrace();
-    }
-  }
-
+  /**
+   * Dummy Test
+   */
   @Test
   public void printEnrolledStudents() {
-    registrar.getStudentsEnrolled()
+    students
        .forEach(System.out::println);
   }
 
-  //TODO write test cases below for each of the following method that just prints the final output of stream operation
   @Test
-  public void printEnrolledStudentsByMajorAndCourseName(){
-
+  public void testByClassComparator() {
+    Student[] studentArray = students.toArray(new Student[0]);
+    methodReference.sortByMajorThenGpaThenNameUsingClass(studentArray);
+    Arrays.stream(studentArray)
+       .forEach(System.out::println);
   }
 
   @Test
-  public void printGetStudentsGpa(){
-
+  public void testByLambda() {
+    methodReference
+       .sortByMajorThenGpaThenNameUsingLambda(students)
+       .forEach(System.out::println);
   }
 
   @Test
-  public void printTopNStudentRedIdsWithHighestScoreInEachCourse(){
-
-  }
-
-  @Test
-  public void printAverageCourseUnitsByAllStudentsAcrossAllCourse(){
-
-  }
-
-  @Test
-  public void printAverageCourseUnitsByAllStudentsAcrossAllNonComputerCourse(){
-
+  public void testByComparatorAndMethodReference() {
+    methodReference
+       .sortByMajorThenGpaThenNameUsingComparatorDotComparingAndMethodReference(students)
+       .forEach(System.out::println);
   }
 
 

@@ -9,25 +9,14 @@ import edu.sdsu.cs160l.lab11.institute.student.StudentMajor;
 
 import java.util.function.Function;
 
+import static edu.sdsu.cs160l.lab11.institute.student.TestStudents.enrollDummyStudents;
+
 public class LambdaToMethodReference {
   private final Registrar registrar;
 
   public LambdaToMethodReference() {
     this.registrar = new Registrar();
-    int i = 1;
-    for (StudentLevel level : StudentLevel.values()) {
-      for (StudentMajor major : StudentMajor.values()) {
-        Student student = new Student(825000003L + i, "Name" + i, (3.0 + ((i % 10) / 10.0)), level, major);
-        i++;
-        for (String courseName : registrar.availableCourseNames()) {
-          try {
-            registrar.enrollStudent(courseName, student);
-          } catch (ClassFullException | StudentAlreadyEnrolledException e) {
-            e.printStackTrace();
-          }
-        }
-      }
-    }
+    enrollDummyStudents(registrar);
   }
 
   public void printEachStudent() {

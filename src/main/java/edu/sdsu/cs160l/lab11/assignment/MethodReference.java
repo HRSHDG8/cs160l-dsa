@@ -12,7 +12,7 @@ import java.util.List;
  * 2) Class vs Lambda vs Method-Reference
  * 3) Collections.sort() vs Stream.sorted()
  */
-public class Lab11 {
+public class MethodReference {
   private static class MultiLevelSorter implements Comparator<Student> {
 
     @Override

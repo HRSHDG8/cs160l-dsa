@@ -11,25 +11,14 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static edu.sdsu.cs160l.lab11.institute.student.TestStudents.enrollDummyStudents;
+
 public class SingleLevelSorting {
   private final Registrar registrar;
 
   public SingleLevelSorting() {
     this.registrar = new Registrar();
-    int i = 1;
-    for (StudentLevel level : StudentLevel.values()) {
-      for (StudentMajor major : StudentMajor.values()) {
-        Student student = new Student(825000003L + i, "Name" + i, (3.0 + ((i % 10) / 10.0)), level, major);
-        i++;
-        for (String courseName : registrar.availableCourseNames()) {
-          try {
-            registrar.enrollStudent(courseName, student);
-          } catch (ClassFullException | StudentAlreadyEnrolledException e) {
-            e.printStackTrace();
-          }
-        }
-      }
-    }
+    enrollDummyStudents(registrar);
   }
 
   private static class StudentGpaOrder implements Comparator<Student> {
