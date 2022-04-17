@@ -5,42 +5,42 @@ import org.junit.jupiter.api.Test;
 
 class SingleLevelSortingTest {
 
-  private SingleLevelSorting singleLevelSorting;
+    private SingleLevelSorting singleLevelSorting;
 
-  @BeforeEach
-  void setUp() {
-    singleLevelSorting = new SingleLevelSorting();
-  }
+    @BeforeEach
+    void setUp() {
+        singleLevelSorting = new SingleLevelSorting();
+    }
 
-  @Test
-  void sortByGpa() {
-    System.out.println("Running Sort By GPA");
-    singleLevelSorting.sortByGpa()
-       .forEach(System.out::println);
-    System.out.println("End Sort By GPA");
-  }
+    @Test
+    void sortByGpa() {
+        System.out.println("Running Sort By GPA");
+        singleLevelSorting.sortByGpa()
+                .forEach(System.out::println);
+        System.out.println("End Sort By GPA");
+    }
 
-  @Test
-  void sortByGpaWithLambda() {
-    System.out.println("Running Sort By GPA Then Lambda");
-    singleLevelSorting.sortByGpaWithLambda()
-       .forEach(System.out::println);
-    System.out.println("End Sort By GPA Then Lambda");
-  }
+    @Test
+    void sortByGpaWithLambda() {
+        System.out.println("Running Sort By GPA Then Lambda");
+        singleLevelSorting.sortByGpaWithLambda()
+                .forEach(System.out::println);
+        System.out.println("End Sort By GPA Then Lambda");
+    }
 
-  @Test
-  void sortByGpaWithComparatorComparing() {
-    System.out.println("Running Sort By GPA With Comparator");
-    singleLevelSorting.sortByGpaWithComparatorComparing()
-       .forEach(System.out::println);
-    System.out.println("End Sort By GPA With Comparator");
-  }
+    @Test
+    void sortByGpaWithComparatorComparing() {
+        System.out.println("Running Sort By GPA With Comparator");
+        singleLevelSorting.sortByGpaWithComparatorComparing()
+                .forEach(System.out::println);
+        System.out.println("End Sort By GPA With Comparator");
+    }
 
-  @Test
-  void sortByGpaWithComparatorComparingAndMethodReference() {
-    System.out.println("Running Sort By GPA WithComparatorComparingAndMethodReference");
-    singleLevelSorting.sortByGpaWithComparatorComparingAndMethodReference()
-       .forEach(System.out::println);
-    System.out.println("End Sort By GPA WithComparatorComparingAndMethodReference");
-  }
+    @Test
+    void sortByGpaWithComparatorComparingAndMethodReference() {
+        System.out.println("Running Sort By GPA WithComparatorComparingAndMethodReference");
+        singleLevelSorting.sortByGpaWithComparatorComparingAndMethodReference()
+                .forEach(System.out::println);
+        System.out.println("End Sort By GPA WithComparatorComparingAndMethodReference");
+    }
 }

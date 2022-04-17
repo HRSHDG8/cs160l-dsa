@@ -5,7 +5,7 @@ import edu.sdsu.cs160l.lab11.exceptions.StudentAlreadyEnrolledException;
 import edu.sdsu.cs160l.lab11.institute.Registrar;
 
 public class TestStudents {
-    public static void enrollDummyStudents(Registrar registrar){
+    public static void enrollDummyStudents(Registrar registrar) {
         int i = 1;
         for (StudentLevel level : StudentLevel.values()) {
             for (StudentMajor major : StudentMajor.values()) {

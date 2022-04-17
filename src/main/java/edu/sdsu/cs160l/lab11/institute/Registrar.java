@@ -52,9 +52,10 @@ public class Registrar {
                 .distinct() //  Stream<Student> returns unique stream of students
                 .collect(Collectors.toList()); // List<Student>
     }
-  /**
-   * TODO convert all possible lambdas to method reference
-   */
+
+    /**
+     * TODO convert all possible lambdas to method reference
+     */
     public List<Student> getStudentsEnrolled() {
         return courseList
                 .entrySet() // Map.Entry<String, Course>
