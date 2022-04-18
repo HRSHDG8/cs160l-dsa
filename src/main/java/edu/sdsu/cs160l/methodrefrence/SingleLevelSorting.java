@@ -8,6 +8,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * In class demonstration
+ */
 public class SingleLevelSorting {
     private final Registrar registrar;
 
@@ -16,6 +19,9 @@ public class SingleLevelSorting {
         TestStudents.enrollDummyStudents(registrar);
     }
 
+    /**
+     * Using a class implementation
+     */
     public List<Student> sortByGpa() {
         return registrar
                 .getStudentsEnrolled()
@@ -24,6 +30,9 @@ public class SingleLevelSorting {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Using Lambda
+     */
     public List<Student> sortByGpaWithLambda() {
         return registrar
                 .getStudentsEnrolled()
@@ -31,7 +40,9 @@ public class SingleLevelSorting {
                 .sorted((o1, o2) -> o1.getGpa().compareTo(o2.getGpa()))
                 .collect(Collectors.toList());
     }
-
+    /**
+     * Using Comparator and Lambda
+     */
     public List<Student> sortByGpaWithComparatorComparing() {
         return registrar
                 .getStudentsEnrolled()
@@ -39,7 +50,9 @@ public class SingleLevelSorting {
                 .sorted(Comparator.comparing(student -> student.getGpa()))
                 .collect(Collectors.toList());
     }
-
+    /**
+     * Using Comparator and Method Reference
+     */
     public List<Student> sortByGpaWithComparatorComparingAndMethodReference() {
         return registrar
                 .getStudentsEnrolled()
@@ -48,6 +61,9 @@ public class SingleLevelSorting {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Class implementation to compare students
+     */
     private static class StudentGpaOrder implements Comparator<Student> {
         @Override
         public int compare(Student o1, Student o2) {
