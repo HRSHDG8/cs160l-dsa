@@ -1,8 +1,8 @@
-package edu.sdsu.cs160l.lab11.institute;
+package edu.sdsu.cs160l.institute;
 
-import edu.sdsu.cs160l.lab11.exceptions.ClassFullException;
-import edu.sdsu.cs160l.lab11.exceptions.StudentAlreadyEnrolledException;
-import edu.sdsu.cs160l.lab11.institute.student.Student;
+import edu.sdsu.cs160l.exceptions.ClassFullException;
+import edu.sdsu.cs160l.exceptions.StudentAlreadyEnrolledException;
+import edu.sdsu.cs160l.institute.student.Student;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package edu.sdsu.cs160l.lab11.exceptions;
+package edu.sdsu.cs160l.exceptions;
 
 public class StudentAlreadyEnrolledException extends Exception {
     public StudentAlreadyEnrolledException(String message) {

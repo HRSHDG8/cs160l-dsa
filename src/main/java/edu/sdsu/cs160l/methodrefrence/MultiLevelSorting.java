@@ -1,20 +1,19 @@
-package edu.sdsu.cs160l.lab11.methodrefrence;
+package edu.sdsu.cs160l.methodrefrence;
 
-import edu.sdsu.cs160l.lab11.institute.Registrar;
-import edu.sdsu.cs160l.lab11.institute.student.Student;
+import edu.sdsu.cs160l.institute.student.Student;
+import edu.sdsu.cs160l.institute.student.TestStudents;
+import edu.sdsu.cs160l.institute.Registrar;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import static edu.sdsu.cs160l.lab11.institute.student.TestStudents.enrollDummyStudents;
 
 public class MultiLevelSorting {
     private final Registrar registrar;
 
     public MultiLevelSorting() {
         this.registrar = new Registrar();
-        enrollDummyStudents(registrar);
+        TestStudents.enrollDummyStudents(registrar);
     }
 
     public List<Student> sortByGpaAndName() {

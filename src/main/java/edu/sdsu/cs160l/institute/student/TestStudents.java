@@ -1,8 +1,8 @@
-package edu.sdsu.cs160l.lab11.institute.student;
+package edu.sdsu.cs160l.institute.student;
 
-import edu.sdsu.cs160l.lab11.exceptions.ClassFullException;
-import edu.sdsu.cs160l.lab11.exceptions.StudentAlreadyEnrolledException;
-import edu.sdsu.cs160l.lab11.institute.Registrar;
+import edu.sdsu.cs160l.exceptions.ClassFullException;
+import edu.sdsu.cs160l.exceptions.StudentAlreadyEnrolledException;
+import edu.sdsu.cs160l.institute.Registrar;
 
 public class TestStudents {
     public static void enrollDummyStudents(Registrar registrar) {

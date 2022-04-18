@@ -1,18 +1,17 @@
-package edu.sdsu.cs160l.lab11.methodrefrence;
+package edu.sdsu.cs160l.methodrefrence;
 
-import edu.sdsu.cs160l.lab11.institute.Registrar;
-import edu.sdsu.cs160l.lab11.institute.student.Student;
+import edu.sdsu.cs160l.institute.student.Student;
+import edu.sdsu.cs160l.institute.student.TestStudents;
+import edu.sdsu.cs160l.institute.Registrar;
 
 import java.util.function.Function;
-
-import static edu.sdsu.cs160l.lab11.institute.student.TestStudents.enrollDummyStudents;
 
 public class LambdaToMethodReference {
     private final Registrar registrar;
 
     public LambdaToMethodReference() {
         this.registrar = new Registrar();
-        enrollDummyStudents(registrar);
+        TestStudents.enrollDummyStudents(registrar);
     }
 
     public void printEachStudent() {

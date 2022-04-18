@@ -1,4 +1,4 @@
-package edu.sdsu.cs160l.lab11.assignment;
+package edu.sdsu.cs160l.assignment;
 
 import java.util.ArrayList;
 import java.util.Arrays;

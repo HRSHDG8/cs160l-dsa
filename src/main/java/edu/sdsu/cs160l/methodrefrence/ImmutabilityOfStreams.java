@@ -1,4 +1,4 @@
-package edu.sdsu.cs160l.lab11.methodrefrence;
+package edu.sdsu.cs160l.methodrefrence;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,6 +1,6 @@
-package edu.sdsu.cs160l.lab11.assignment;
+package edu.sdsu.cs160l.assignment;
 
-import edu.sdsu.cs160l.lab11.institute.student.Student;
+import edu.sdsu.cs160l.institute.student.Student;
 
 import java.util.Arrays;
 import java.util.Comparator;
