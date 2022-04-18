@@ -13,12 +13,12 @@ public class MethodReference {
     }
 
     public List<Student> sortByMajorThenGpaThenNameUsingLambda(List<Student> students) {
-        //TODO implement your logic here to sort by Major then Gpa then Student Name using lambda syntax only (2 points)
+        //TODO implement your logic here to sort by Major then Gpa then Student Name using lambda syntax only (1 points)
         return null;
     }
 
     public List<Student> sortByMajorThenGpaThenNameUsingComparatorDotComparingAndMethodReference(List<Student> students) {
-        //TODO implement your logic here to sort by Major then Gpa then Student Name using lambda syntax only (2 points)
+        //TODO implement your logic here to sort by Major then Gpa then Student Name using lambda syntax only (1 points)
         return null;
     }
 
