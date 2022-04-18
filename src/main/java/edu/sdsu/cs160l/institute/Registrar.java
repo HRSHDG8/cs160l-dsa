@@ -41,6 +41,9 @@ public class Registrar {
 
     }
 
+    /**
+     * In class demonstration
+     */
     public List<Student> getStudentsEnrolled(StudentMajor major, String courseNameStartWith) {
         return courseList
                 .entrySet() // Map.Entry<String, Course>
