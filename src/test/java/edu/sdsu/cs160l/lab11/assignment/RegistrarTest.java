@@ -9,6 +9,9 @@ import edu.sdsu.cs160l.lab11.institute.student.StudentMajor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+/**
+ * No Credit this test is just for practice
+ */
 public class RegistrarTest {
     private Registrar registrar;
 

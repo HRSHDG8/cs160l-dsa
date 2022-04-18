@@ -6,12 +6,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-/**
- * TODO Write report including the following points
- * 1) Method Reference
- * 2) Class vs Lambda vs Method-Reference
- * 3) Collections.sort() vs Stream.sorted()
- */
 public class MethodReference {
     public Student[] sortByMajorThenGpaThenNameUsingClass(Student[] students) {
         Arrays.sort(students, new MultiLevelSorter());
