@@ -36,7 +36,7 @@ public class MultiLevelSorting {
                 .stream()
                 .sorted((o1, o2) -> {
                     int compareTo = o1.getGpa().compareTo(o2.getGpa());
-                    if (compareTo == 0) {
+                    if (compareTo == 0) { //if values are same comparison is 0
                         compareTo = o1.getName().compareTo(o2.getName());
                     }
                     return compareTo;
