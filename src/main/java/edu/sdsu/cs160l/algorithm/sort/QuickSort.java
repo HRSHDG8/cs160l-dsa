@@ -32,6 +32,7 @@ public class QuickSort implements Sorter {
         int i = (low - 1);
 
         for (int j = low; j <= high - 1; j++) {
+            // arr[j] < pivot (if you are sorting integer array, below is generic implementation)
             if (comparisonStrategy.compare(arr[j], pivot) < 0) {
                 i++;
                 swap(arr, i, j);
