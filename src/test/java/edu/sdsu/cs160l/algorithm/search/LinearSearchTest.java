@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static edu.sdsu.cs160l.TestUtils.printTime;
+import static edu.sdsu.cs160l.TestUtils.printExecutionTime;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LinearSearchTest {
@@ -26,9 +26,9 @@ class LinearSearchTest {
 
     @Test
     public void search() {
-        int index = printTime(()-> linearSearch.search(numbers, 1000000));
+        int index = printExecutionTime(()-> linearSearch.search(numbers, 1000000));
         assertEquals(500000, index);
-        index = printTime(()-> linearSearch.search(numbers, 1));
+        index = printExecutionTime(()-> linearSearch.search(numbers, 1));
         assertEquals(-1, index);
     }
 

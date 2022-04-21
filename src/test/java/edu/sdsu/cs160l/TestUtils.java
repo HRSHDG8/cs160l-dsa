@@ -5,7 +5,7 @@ import java.util.function.Supplier;
 
 public class TestUtils {
 
-    public static <T> T printTime(Supplier<T> fn){
+    public static <T> T printExecutionTime(Supplier<T> fn){
         long startTime = System.nanoTime();
         T o = fn.get();
         long timeEnd = System.nanoTime();
