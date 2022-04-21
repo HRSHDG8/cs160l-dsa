@@ -1,16 +1,21 @@
-package edu.sdsu.cs160l.methodrefrence;
+package edu.sdsu.cs160l.algorithm.sort;
 
-import edu.sdsu.cs160l.institute.student.Student;
-import edu.sdsu.cs160l.institute.student.StudentLevel;
-import edu.sdsu.cs160l.institute.student.StudentMajor;
+import edu.sdsu.cs160l.student.Student;
+import edu.sdsu.cs160l.student.StudentLevel;
+import edu.sdsu.cs160l.student.StudentMajor;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.Comparator;
 
-public class PrimitiveArrays {
-    private final Student[] students;
+import static org.junit.jupiter.api.Assertions.*;
 
-    public PrimitiveArrays() {
+class BubbleSortTest {
+    private Sorter sorter;
+    private Student[] students;
+    @BeforeEach
+    void setUp() {
+        sorter = new BubbleSort();
         students = new Student[10];
         students[0] = new Student(825000001L, "hmac", 3.8, StudentLevel.SENIOR, StudentMajor.COMPUTER_SCIENCE);
         students[1] = new Student(825000002L, "john", 3.7, StudentLevel.FRESHMAN, StudentMajor.BIOLOGY);
@@ -24,19 +29,24 @@ public class PrimitiveArrays {
         students[9] = new Student(825000002L, "ryan", 3.5, StudentLevel.FRESHMAN, StudentMajor.BIOLOGY);
     }
 
-    public Student[] sortStudentByName() {
-        Arrays.sort(students, Comparator.comparing(Student::getName));
-        return students;
+    @Test
+    void sortWithException() {
+        assertThrows(Exception.class, ()-> sorter.sort(students));
     }
 
-    /**
-     * TODO complete function below for 1 point
-     * Make sure to use method reference only
-     */
-    public Student[] sortByGpaInReverseOrderThenName() {
-        //TODO implement you logic to sort the above student array first by their GPA in descending order then by their names;
-        return students;
+    @Test
+    void sort() {
+        sorter.sort(students, Comparator.comparing(Student::getGpa));
+        assertEquals(3.5, students[0].getGpa());
+        assertEquals(3.7, students[4].getGpa());
+        assertEquals(3.8, students[9].getGpa());
     }
 
-
+    @Test
+    void sortReverse() {
+        sorter.sort(students, Comparator.comparing(Student::getGpa).reversed());
+        assertEquals(3.5, students[9].getGpa());
+        assertEquals(3.7, students[4].getGpa());
+        assertEquals(3.8, students[0].getGpa());
+    }
 }

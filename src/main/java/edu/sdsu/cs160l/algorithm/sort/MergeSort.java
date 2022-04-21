@@ -4,6 +4,7 @@ import java.util.Comparator;
 
 /**
  * TODO assignment
+ *  implement mergesort in a similar way as quick sort and bubble sort structurally
  */
 public class MergeSort implements Sorter{
     @Override

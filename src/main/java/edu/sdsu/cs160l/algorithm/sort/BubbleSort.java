@@ -12,9 +12,9 @@ public class BubbleSort implements Sorter {
 
     @Override
     public <T> void sort(T[] c, Comparator<? super T> comparisonStrategy) {
-        for (int i = 0; i < c.length - 1; i++) {
-            for (int j = 0; j < c.length - 1; j++) {
-                if (comparisonStrategy.compare(c[j], c[j + 1]) > 0) {
+        for (int i = 0; i < c.length ; i++) {
+            for (int j = 0; j < c.length ; j++) {
+                if (comparisonStrategy.compare(c[j], c[i]) > 0) {
                     swap(c, i, j);
                 }
             }

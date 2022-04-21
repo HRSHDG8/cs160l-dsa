@@ -12,4 +12,11 @@ public class TestUtils {
         System.out.println("Time to execute :: "+ (timeEnd-startTime)/1000+ " milliseconds");
         return o;
     }
+
+    public static void printExecutionTime(Runnable fn){
+        long startTime = System.nanoTime();
+        fn.run();
+        long timeEnd = System.nanoTime();
+        System.out.println("Time to execute :: "+ (timeEnd-startTime)/1000+ " milliseconds");
+    }
 }

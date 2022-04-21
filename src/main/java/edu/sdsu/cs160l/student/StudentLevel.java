@@ -1,4 +1,4 @@
-package edu.sdsu.cs160l.institute.student;
+package edu.sdsu.cs160l.student;
 
 public enum StudentLevel {
     FRESHMAN,
