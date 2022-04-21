@@ -1,5 +1,5 @@
 package edu.sdsu.cs160l.datastructure;
-// TODO implement the below function 2 points
+// TODO implement the below function (2 points)
 //  use Test Class to test your implementation
 public class Parenthesis {
     /**

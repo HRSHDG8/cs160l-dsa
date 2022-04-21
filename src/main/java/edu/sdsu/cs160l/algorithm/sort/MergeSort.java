@@ -3,7 +3,7 @@ package edu.sdsu.cs160l.algorithm.sort;
 import java.util.Comparator;
 
 /**
- * TODO assignment
+ * TODO assignment (4 points)
  *  implement mergesort in a similar way as quick sort and bubble sort structurally
  */
 public class MergeSort implements Sorter{
