@@ -18,7 +18,7 @@ class BinarySearchTest {
     public void init() {
         binarySearch = new BinarySearch();
         numbers = IntStream
-                .range(0, 10000000) //IntStream.range() creates an IntStream of numbers in a range passed
+                .range(0, 100000) //IntStream.range() creates an IntStream of numbers in a range passed
                 .filter(e -> e % 2 == 0) //IntStream
                 .boxed() //Stream<Integer>
                 .collect(Collectors.toList()); //List<Integer>
@@ -26,8 +26,8 @@ class BinarySearchTest {
 
     @Test
     public void search() {
-        int index = printExecutionTime(() -> binarySearch.search(numbers, 1000000));
-        assertEquals(500000, index);
+        int index = printExecutionTime(() -> binarySearch.search(numbers, 10000));
+        assertEquals(5000, index);
         index = printExecutionTime(() -> binarySearch.search(numbers, 1));
         assertEquals(-1, index);
     }

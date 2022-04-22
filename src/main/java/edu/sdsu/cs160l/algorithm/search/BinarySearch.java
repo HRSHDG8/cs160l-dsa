@@ -20,7 +20,7 @@ public class BinarySearch implements Search {
      * write an algorithm that runs in O(log(n)) time, where n is input size
      */
     @Override
-    public <T> int search(List<T> list, T t) {
+    public <T extends Comparable<? super T>> int search(List<T> list, T t) {
         return -1;
     }
 }

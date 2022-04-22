@@ -1,5 +1,7 @@
 package edu.sdsu.cs160l.datastructure;
 
+import java.util.Stack;
+
 // TODO implement the below function (2 points)
 //  use Test Class to test your implementation
 public class Parenthesis {

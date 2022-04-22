@@ -5,6 +5,8 @@ import java.util.Comparator;
 /**
  * TODO assignment (4 points)
  *  implement mergesort in a similar way as quick sort and bubble sort structurally
+ *
+ *  hint to create a generic array use T[] t = (T[])(new Object[])
  */
 public class MergeSort implements Sorter {
     @Override
@@ -18,4 +20,5 @@ public class MergeSort implements Sorter {
     public <T> void sort(T[] c, Comparator<? super T> comparisonStrategy) {
 
     }
+
 }

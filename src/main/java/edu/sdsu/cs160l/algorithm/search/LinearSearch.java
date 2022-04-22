@@ -10,7 +10,7 @@ public class LinearSearch implements Search {
      * Its space complexity is O(1)
      */
     @Override
-    public <T> int search(List<T> list, T t) {
+    public <T extends Comparable<? super T>> int search(List<T> list, T t) {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).equals(t)) {
                 return i;
