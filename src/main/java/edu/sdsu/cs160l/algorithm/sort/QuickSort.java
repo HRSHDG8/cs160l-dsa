@@ -5,6 +5,7 @@ import java.util.Comparator;
 /**
  * In class explanation + demonstration
  * encompasses use of generics and quick-sort algorithm
+ * quick question, what would you change to use this class for Collections instead of Array
  */
 public class QuickSort implements Sorter {
     @Override
@@ -29,6 +30,9 @@ public class QuickSort implements Sorter {
         arr[j] = temp;
     }
 
+    /**
+     * Note how Comparator is always of the same Type as you array
+     */
     private <T> int partition(T[] arr, int low, int high, Comparator<T> comparisonStrategy) {
         T pivot = arr[high];
 
@@ -36,6 +40,8 @@ public class QuickSort implements Sorter {
 
         for (int j = low; j <= high - 1; j++) {
             // arr[j] < pivot (if you are sorting integer array, below is generic implementation)
+            // A key point is to understand how this comparison works using comparators
+            // You can accept custom comparators using this
             if (comparisonStrategy.compare(arr[j], pivot) < 0) {
                 i++;
                 swap(arr, i, j);
