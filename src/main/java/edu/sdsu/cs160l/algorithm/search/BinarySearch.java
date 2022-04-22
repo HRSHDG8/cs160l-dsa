@@ -18,6 +18,7 @@ public class BinarySearch implements Search {
     /**
      * Input to binary search will always be a sorted array.
      * write an algorithm that runs in O(log(n)) time, where n is input size
+     * to compare value use .compareTo method rather than > or < operators
      */
     @Override
     public <T extends Comparable<? super T>> int search(List<T> list, T t) {
