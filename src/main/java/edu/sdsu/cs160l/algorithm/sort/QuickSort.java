@@ -19,7 +19,10 @@ public class QuickSort implements Sorter {
         quickSort(collection, 0, collection.length - 1, comparisonStrategy);
     }
 
-
+    /**
+     * When using generics the key is to identify what parameter to generify
+     * indexes are always int irrespective of the type of Array and hence would always be int
+     */
     private <T> void swap(T[] arr, int i, int j) {
         T temp = arr[i];
         arr[i] = arr[j];
