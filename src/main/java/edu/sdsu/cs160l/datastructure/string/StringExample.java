@@ -14,9 +14,9 @@ public class StringExample {
 
         //loop over each string a print all character
 
-        for(int i=0;i<s.length();i++){
+        for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            System.out.println("Char at index :: "+i+" is :: "+ch);
+            System.out.println("Char at index :: " + i + " is :: " + ch);
         }
 
     }

@@ -26,7 +26,7 @@ public class ListExample {
         list.remove(1);
 
         // indexOf() – also runs in linear time. It iterates through the internal array and checks each element one by one, so the time complexity for this operation always requires O(n) time.
-        int index  =list.indexOf(2);
+        int index = list.indexOf(2);
 
         // contains() – implementation is based on indexOf(), so it'll also run in O(n) time.
         boolean contains = list.contains(3);

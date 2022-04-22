@@ -9,12 +9,12 @@ import java.util.stream.IntStream;
 import static edu.sdsu.cs160l.TestUtils.printExecutionTime;
 
 public class AlgorithmTimeComparator {
-    private BubbleSort bubbleSort;
-    private QuickSort quickSort;
-    private MergeSort mergeSort;
     Integer[] small;
     Integer[] medium;
     Integer[] large;
+    private BubbleSort bubbleSort;
+    private QuickSort quickSort;
+    private MergeSort mergeSort;
 
     @BeforeEach
     public void init() {

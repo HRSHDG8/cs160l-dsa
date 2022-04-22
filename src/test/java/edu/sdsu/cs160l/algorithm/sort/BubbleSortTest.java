@@ -8,11 +8,13 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Comparator;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class BubbleSortTest {
     private Sorter sorter;
     private Student[] students;
+
     @BeforeEach
     void setUp() {
         sorter = new BubbleSort();
@@ -31,7 +33,7 @@ class BubbleSortTest {
 
     @Test
     void sortWithException() {
-        assertThrows(Exception.class, ()-> sorter.sort(students));
+        assertThrows(Exception.class, () -> sorter.sort(students));
     }
 
     @Test

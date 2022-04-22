@@ -14,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class QuickSortTest {
     private Sorter sorter;
     private Student[] students;
+
     @BeforeEach
     void setUp() {
         sorter = new QuickSort();
@@ -32,7 +33,7 @@ class QuickSortTest {
 
     @Test
     void sortWithException() {
-        assertThrows(Exception.class, ()-> sorter.sort(students));
+        assertThrows(Exception.class, () -> sorter.sort(students));
     }
 
     @Test

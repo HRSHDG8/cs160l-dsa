@@ -6,11 +6,12 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ParenthesisTest {
     private final Map<String, Boolean> answerSet = new HashMap<>();
     private Parenthesis parenthesis;
+
     @BeforeEach
     void setUp() {
         parenthesis = new Parenthesis();
@@ -30,7 +31,7 @@ class ParenthesisTest {
     @Test
     void balancedParentheses() {
         answerSet
-                .forEach((parenthesise, expected)->
+                .forEach((parenthesise, expected) ->
                         assertEquals(parenthesis.isBalanced(parenthesise), expected));
     }
 }

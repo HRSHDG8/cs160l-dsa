@@ -30,7 +30,7 @@ public class StackExample {
         stack.push(6);
         stack.push(7);
 
-        while (!stack.isEmpty()){
+        while (!stack.isEmpty()) {
             System.out.println(stack.pop());
         }
     }

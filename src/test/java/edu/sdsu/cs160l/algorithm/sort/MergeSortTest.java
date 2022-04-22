@@ -14,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class MergeSortTest {
     private Sorter sorter;
     private Student[] students;
+
     @BeforeEach
     void setUp() {
         sorter = new MergeSort();
@@ -32,7 +33,7 @@ class MergeSortTest {
 
     @Test
     void sortWithException() {
-        assertThrows(Exception.class, ()-> sorter.sort(students));
+        assertThrows(Exception.class, () -> sorter.sort(students));
     }
 
     @Test

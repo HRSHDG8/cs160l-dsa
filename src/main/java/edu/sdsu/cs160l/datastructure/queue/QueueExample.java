@@ -31,7 +31,7 @@ public class QueueExample {
         queue.add(6);
         queue.add(6);
 
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             System.out.println(queue.poll());
         }
     }
