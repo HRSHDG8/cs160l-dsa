@@ -3,6 +3,11 @@ package edu.sdsu.cs160l.datastructure.map;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * In class explanation + demonstration
+ * Maps are perfect to use for key-value association mapping such as dictionaries.
+ * Maps are an array of linked list where each list is treated as a bucket of similar hash values.
+ */
 public class MapExample {
     public static void main(String[] args) {
         Map<Integer, String> map = new HashMap<>();

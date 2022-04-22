@@ -18,7 +18,7 @@ class LinearSearchTest {
     public void init() {
         linearSearch = new LinearSearch();
         numbers = IntStream
-                .range(0, 10000000) //IntStream
+                .range(0, 10000000) //IntStream.range() creates an IntStream of numbers in a range passed
                 .filter(e -> e % 2 == 0) //IntStream
                 .boxed() //Stream<Integer>
                 .collect(Collectors.toList()); //List<Integer>

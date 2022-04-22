@@ -12,12 +12,12 @@ public class AlgorithmTimeComparator {
     private BubbleSort bubbleSort;
     private QuickSort quickSort;
     private MergeSort mergeSort;
-    Integer[] small ;
-    Integer[] medium ;
-    Integer[] large ;
+    Integer[] small;
+    Integer[] medium;
+    Integer[] large;
 
     @BeforeEach
-    public void init(){
+    public void init() {
         bubbleSort = new BubbleSort();
         quickSort = new QuickSort();
         mergeSort = new MergeSort();
@@ -27,23 +27,23 @@ public class AlgorithmTimeComparator {
     }
 
     @Test
-    public void compareTimeOfSortingAlgorithms(){
+    public void compareTimeOfSortingAlgorithms() {
         //Bubble Sort
         System.out.println("Bubble Sort :: small, medium, large");
-        printExecutionTime(()->bubbleSort.sort(small, Comparator.reverseOrder()));
-        printExecutionTime(()->bubbleSort.sort(medium, Comparator.reverseOrder()));
-        printExecutionTime(()->bubbleSort.sort(large, Comparator.reverseOrder()));
+        printExecutionTime(() -> bubbleSort.sort(small, Comparator.reverseOrder()));
+        printExecutionTime(() -> bubbleSort.sort(medium, Comparator.reverseOrder()));
+        printExecutionTime(() -> bubbleSort.sort(large, Comparator.reverseOrder()));
 
         //Quick Sort
         System.out.println("Quick Sort :: small, medium, large");
-        printExecutionTime(()->quickSort.sort(small, Comparator.reverseOrder()));
-        printExecutionTime(()->quickSort.sort(medium, Comparator.reverseOrder()));
-        printExecutionTime(()->quickSort.sort(large, Comparator.reverseOrder()));
+        printExecutionTime(() -> quickSort.sort(small, Comparator.reverseOrder()));
+        printExecutionTime(() -> quickSort.sort(medium, Comparator.reverseOrder()));
+        printExecutionTime(() -> quickSort.sort(large, Comparator.reverseOrder()));
 
         //Merge Sort
         System.out.println("Merge Sort :: small, medium, large");
-        printExecutionTime(()->mergeSort.sort(small, Comparator.reverseOrder()));
-        printExecutionTime(()->mergeSort.sort(medium, Comparator.reverseOrder()));
-        printExecutionTime(()->mergeSort.sort(large, Comparator.reverseOrder()));
+        printExecutionTime(() -> mergeSort.sort(small, Comparator.reverseOrder()));
+        printExecutionTime(() -> mergeSort.sort(medium, Comparator.reverseOrder()));
+        printExecutionTime(() -> mergeSort.sort(large, Comparator.reverseOrder()));
     }
 }

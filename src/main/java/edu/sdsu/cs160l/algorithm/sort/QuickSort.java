@@ -3,8 +3,8 @@ package edu.sdsu.cs160l.algorithm.sort;
 import java.util.Comparator;
 
 /**
- * In class demonstration
- * encompasses use of generics and quicksort algorithm
+ * In class explanation + demonstration
+ * encompasses use of generics and quick-sort algorithm
  */
 public class QuickSort implements Sorter {
     @Override

@@ -3,6 +3,10 @@ package edu.sdsu.cs160l.datastructure.set;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * In class explanation + demonstration
+ * A HashSet is a HashMap with no values
+ */
 public class SetExample {
     public static void main(String[] args) {
         //creating a list

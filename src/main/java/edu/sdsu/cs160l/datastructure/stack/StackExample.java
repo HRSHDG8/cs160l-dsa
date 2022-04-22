@@ -2,6 +2,10 @@ package edu.sdsu.cs160l.datastructure.stack;
 
 import java.util.Stack;
 
+/**
+ * In class explanation + demonstration
+ * A stack is a last in first out structure
+ */
 public class StackExample {
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();

@@ -1,5 +1,8 @@
 package edu.sdsu.cs160l.datastructure.string;
 
+/**
+ * In class explanation + demonstration
+ */
 public class StringExample {
     public static void main(String[] args) {
         // string is just a sequence of characters

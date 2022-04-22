@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
+ * In class explanation + demonstration
  * Note a queue in java is implemented as a {@link java.util.LinkedList}
  */
 public class QueueExample {

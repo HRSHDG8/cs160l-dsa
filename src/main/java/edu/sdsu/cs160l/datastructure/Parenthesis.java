@@ -1,4 +1,5 @@
 package edu.sdsu.cs160l.datastructure;
+
 // TODO implement the below function (2 points)
 //  use Test Class to test your implementation
 public class Parenthesis {
@@ -7,6 +8,7 @@ public class Parenthesis {
      *                 eg : '((()))' is valid
      *                      '())' is invalid
      *                      ')(' is invalid
+     *                 Check the test class for more examples
      * @return true is the brackets are balanced else false
      */
     public boolean isBalanced(String brackets){

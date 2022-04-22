@@ -4,7 +4,7 @@ import java.util.List;
 
 public class LinearSearch implements Search {
     /**
-     * In class demonstration
+     * In class explanation + demonstration
      * Linear search has you iterate over the input set of size n at least once
      * Its runtime complexity in O(n) n being the input size.
      * Its space complexity is O(1)

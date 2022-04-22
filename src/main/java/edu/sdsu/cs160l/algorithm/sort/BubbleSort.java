@@ -2,6 +2,10 @@ package edu.sdsu.cs160l.algorithm.sort;
 
 import java.util.Comparator;
 
+/**
+ * In class explanation + demonstration
+ * encompasses use of generics and bubble-sort algorithm
+ */
 public class BubbleSort implements Sorter {
     @Override
     @SuppressWarnings("unchecked")

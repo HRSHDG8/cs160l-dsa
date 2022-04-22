@@ -3,6 +3,10 @@ package edu.sdsu.cs160l.datastructure.list;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * In class explanation + demonstration
+ * A list represent an array structure
+ */
 public class ListExample {
     public static void main(String[] args) {
         //creating a list
